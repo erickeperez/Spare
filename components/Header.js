@@ -1,29 +1,51 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Button, Text, StyleSheet, View } from 'react-native';
 import Colors from '../constants/Colors';
 import TitleText from '../components/TitleText';
 
 const Header = (props) => {
 	return (
-		<View style={styles.header}>
-			<TitleText style={styles.headerTitle}>Spare</TitleText>
+		<View style={styles.screen}>
+			<TitleText style={styles.header}>Spare</TitleText>
+			<Button 
+			title="How it works"
+			onPress={() => {
+
+			}}
+			/>
+			<Button
+			title="Resources"
+			onPress={() => {
+
+			}}
+			/>
+			<Button 
+			title="Sign In"
+			onPress={() => {
+
+			}}
+			/>
 		</View>
 	);
 };
 
 const styles = StyleSheet.create({
+	screen: {
+		flex: 1
+	},
 	header: {
 		width: '100%',
 		height: 90,
 		paddingTop: 36,
+		paddingLeft: 5,
 		backgroundColor: Colors.primaryColor,
-		alignItems: 'center',
-		justifyContent: 'center',
+		alignItems: 'flex-start',
+		justifyContent: 'space-between',
     },
     headerTitle: {
         color: 'black',
         fontSize: 18
-    }
+    },
 });
 
 export default Header;
