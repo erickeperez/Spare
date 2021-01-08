@@ -5,6 +5,9 @@ import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import Colors from './constants/Colors';
 import Header from './components/Header';
+import { enableScreens } from 'react-native-screens'
+
+enableScreens();
 
 const fetchFonts = () => {
 	return Font.loadAsync({

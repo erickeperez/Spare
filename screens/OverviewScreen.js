@@ -2,7 +2,13 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
 const OverviewScreen = props => {
-    
+    <Text>
+		This is the OverviewScreen.
+	</Text>
+};
+
+OverviewScreen.navigationOptions = {
+	headerTitle: 'Overview Screen',
 };
 
 const style = StyleSheet.create({

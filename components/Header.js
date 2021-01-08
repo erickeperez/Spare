@@ -3,14 +3,15 @@ import { Button, Text, StyleSheet, View } from 'react-native';
 import Colors from '../constants/Colors';
 import TitleText from '../components/TitleText';
 
-const Header = (props) => {
+
+const Header = props => {
 	return (
 		<View style={styles.screen}>
 			<TitleText style={styles.header}>Spare</TitleText>
 			<Button 
-			title="How it works"
+			title="Overview"
 			onPress={() => {
-
+				props.navigation.navigate('OverviewScreen');
 			}}
 			/>
 			<Button
